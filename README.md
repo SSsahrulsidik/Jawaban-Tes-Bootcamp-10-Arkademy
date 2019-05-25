@@ -1,7 +1,7 @@
 # Jawaban-Tes-Bootcamp-10-Arkademy
 
 - REST
-REST (REpresentational State Transfer) merupakan standar arsitektur komunikasi berbasis web yang sering diterapkan dalam pengembangan layanan berbasis web.
+REST (Representational State Transfer) merupakan standar arsitektur komunikasi berbasis web yang sering diterapkan dalam pengembangan layanan berbasis web.
 
 - API
 API a(Application Programming Interface) Merupakan suatu “penghubung” yang memungkinkan suatu aplikasi untuk berinteraksi dengan aplikasi lainnya dan berbagi data 
