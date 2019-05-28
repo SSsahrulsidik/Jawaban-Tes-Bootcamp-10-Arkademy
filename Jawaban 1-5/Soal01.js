@@ -27,7 +27,7 @@ const biodataKu = {
     is_married: false,
     school: {
         highSchool: "SMAN 1 KALIBUNDER 2010-2013", 
-        University: "STIE PGRI SUKABUMI 2010-2013" 
+        University: "STIE PGRI SUKABUMI 2013-2017" 
     },
     skills : [
     {
