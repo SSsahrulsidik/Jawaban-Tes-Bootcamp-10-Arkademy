@@ -10,12 +10,6 @@
 	
 // Pada readme sebutkan apa itu REST API dan kegunaan JSON pada REST API, dan dipelajarin yaa..
 
-
-// ini mengmbil id soal-01 
-// yang nantinya hasil dari doccument.write akan di tampilkan di  di child dari class soal-1
-// serang di console.log dulu buat mengetahui hasilnya, kalo keburu mengerjakannya akan di tampilkan di htmlnya
-const soal1 = document.getElementById('soal-01');
-
 const biodataKu = {
     name: 'Sahrul Sidik',
     address: 'Kp. Lamping, Kel. Gedong Panjang, Kec. Citamiang, Kota Sukabumi',
@@ -27,7 +21,7 @@ const biodataKu = {
     is_married: false,
     school: {
         highSchool: "SMAN 1 KALIBUNDER 2010-2013", 
-        University: "STIE PGRI SUKABUMI 2013-2017" 
+        University: "STIE PGRI SUKABUMI 2010-2013" 
     },
     skills : [
     {
@@ -59,20 +53,62 @@ const biodataKu = {
     }
 };
 
-biodataKu.nama();
+// menampilkan object ke json
+// console.log(JSON.stringify(biodataKu));
+
+// variabel inisialisasi untuk menampilkan JSON dari object
+const data01 = (JSON.stringify(biodataKu));
+
+// Mengambil element dari ID Jawaban-soal dan child tag p dari childnya child ID untuk menimpan biodatanya di element yang di ambil ini
+const jawaban01 = document.querySelectorAll('#jawaban-soal p');
+
+const jawaban001 = jawaban01[0];
+// console.log(jawaban01);
+jawaban001.innerHTML = `(${data01})`
+
+
+
+
+
+// -----
+// mengambil element-element untk jawaban-jawabannya
+// ------
+// const jawaban02 = jawaban[1];
+// console.log(jawaban02);
+
+// const jawaban03 = jawaban[2];
+// console.log(jawaban03);
+
+// const jawaban04 = jawaban[3];
+// console.log(jawaban04);
+
+// const jawaban05 = jawaban[4];
+// console.log(jawaban05);
+
+
+
+
+
+// -----
+// menampilkan bagian- bagian dari object
+// -----
+// biodataKu.nama();
 // Sahrul Sidik
-biodataKu.alamat();
+
+// biodataKu.alamat();
 // Kp. Lamping, Kel. Gedong Panjang, Kec. Citamiang, Kota Sukabu
-biodataKu.hobi();
+
+// biodataKu.hobi();
 // (3) ["read", "playing some music like a guitar", "learning tutorial from the internet"]
-biodataKu.statusMenikah();
+
+// biodataKu.statusMenikah();
 // Belum Menikah Atau = false
-biodataKu.sekolah();
+
+// biodataKu.sekolah();
 // {highSchool: "SMAN 1 KALIBUNDER 2010-2013", University: "STIE PGRI SUKABUMI 2010-2013"}
-biodataKu.kemampuan();
+
+// biodataKu.kemampuan();
 // {name: "Basic & Intermediate JavaScript ", score: 80}
-
-
 
 
 
